@@ -11,6 +11,7 @@ public class MainActivity extends AppCompatActivity {
     final int POINTS_FOR_NORMAL_THROW = 2;
     final int POINTS_FOR_LONG_THROW = 3;
     int scoreTeamA = 0;
+    int scoreTeamB = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,11 +20,16 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * @param score display the scoreTeamA for team A
+     * method that display the scoreTeamA for team A
      */
-    public void displayForTeamA(int score) {
+    public void displayForTeamA() {
         TextView scoreView = (TextView) findViewById(R.id.scores_A);
-        scoreView.setText(String.valueOf(score));
+        scoreView.setText(String.valueOf(scoreTeamA));
+    }
+
+    public void displayForTeamB() {
+        TextView scoreView = (TextView) findViewById(R.id.scores_B);
+        scoreView.setText(String.valueOf(scoreTeamB));
     }
 
     /**
@@ -31,7 +37,12 @@ public class MainActivity extends AppCompatActivity {
      */
     public void increase3PointsTeamA(View view) {
         scoreTeamA += POINTS_FOR_LONG_THROW;
-        displayForTeamA(scoreTeamA);
+        displayForTeamA();
+    }
+
+    public void increase3PointsTeamB(View view) {
+        scoreTeamB += POINTS_FOR_LONG_THROW;
+        displayForTeamB();
     }
 
     /**
@@ -39,7 +50,12 @@ public class MainActivity extends AppCompatActivity {
      */
     public void increase2PointsTeamA(View view) {
         scoreTeamA += POINTS_FOR_NORMAL_THROW;
-        displayForTeamA(scoreTeamA);
+        displayForTeamA();
+    }
+
+    public void increase2PointsTeamB(View view) {
+        scoreTeamB += POINTS_FOR_NORMAL_THROW;
+        displayForTeamB();
     }
 
     /**
@@ -47,7 +63,12 @@ public class MainActivity extends AppCompatActivity {
      */
     public void increase1PointsTeamA(View view) {
         scoreTeamA += POINTS_FOR_FREE_THROW;
-        displayForTeamA(scoreTeamA);
+        displayForTeamA();
+    }
+
+    public void increase1PointsTeamB(View view) {
+        scoreTeamB += POINTS_FOR_FREE_THROW;
+        displayForTeamB();
     }
 
 }
