@@ -76,22 +76,22 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="+3 points"
-            android:onClick="increase3PointsTeamB"/>
+            android:onClick="increase3PointsTeamB"
+            android:text="+3 points" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="+2 points"
-            android:onClick="increase2PointsTeamB"/>
+            android:onClick="increase2PointsTeamB"
+            android:text="+2 points" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="Free Throw"
-            android:onClick="increase1PointsTeamB"/>
+            android:onClick="increase1PointsTeamB"
+            android:text="Free Throw" />
 
 
     </LinearLayout>
