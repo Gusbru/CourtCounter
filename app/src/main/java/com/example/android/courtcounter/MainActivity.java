@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
     /**
      * @param view increase 3 points when button is clicked
      */
-    public void increase3Points(View view) {
+    public void increase3PointsTeamA(View view) {
         scoreTeamA += POINTS_FOR_LONG_THROW;
         displayForTeamA(scoreTeamA);
     }
@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
     /**
      * @param view increase 2 points when button is clicked
      */
-    public void increase2Points(View view) {
+    public void increase2PointsTeamA(View view) {
         scoreTeamA += POINTS_FOR_NORMAL_THROW;
         displayForTeamA(scoreTeamA);
     }
@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
     /**
      * @param view increase 1 point when button is clicked
      */
-    public void increase1Points(View view) {
+    public void increase1PointsTeamA(View view) {
         scoreTeamA += POINTS_FOR_FREE_THROW;
         displayForTeamA(scoreTeamA);
     }
